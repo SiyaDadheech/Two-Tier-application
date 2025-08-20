@@ -35,4 +35,15 @@ pipeline {
     }
 }
 
+#Problem Faced While Creating the project
+1. Docker Compose was not installed:
+
+   To install it use command: apt install docker-compose -y
+   to verify it: docker-compose --version
+   
+2. Jenkins did not have permission to access Docker:
+   To fix this, add the Jenkins user to the Docker group:  sudo usermod -aG docker jenkins
+   restart the jenkins service: systemctl restart jenkins
+   
+
 
